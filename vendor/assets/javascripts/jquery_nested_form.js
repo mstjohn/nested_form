@@ -49,7 +49,7 @@ jQuery(function($) {
       return false;
     },
     insertFields: function(content, assoc, link) {
-      return $(content).insertBefore(link);
+      return $(content).appendTo('.' + assoc + '_fields');
     },
     removeFields: function(e) {
       var link = e.currentTarget;
